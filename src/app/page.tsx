@@ -240,7 +240,7 @@ export default function Home() {
                         >
                             <img srcSet={logoImg.src} alt="YETbet Logo" className="w-15 h-auto rounded-full" />
                             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center">
-                                How It Works: <span className="text-[#38bdf8]">Betting on the Twitterverse</span>
+                                How It Works: <span className="text-[#38bdf8]">Yetting on the Twitterverse</span>
                             </h2>
                             <div className="h-1 w-16 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full mb-0 mx-auto" />
                         </motion.div>
@@ -255,8 +255,8 @@ export default function Home() {
                                 },
                                 {
                                     step: 2,
-                                    title: 'Betting Window',
-                                    desc: 'Place your bets until 11:59 PM using $YET tokens',
+                                    title: 'Yetting Window',
+                                    desc: 'Place your yets until 11:59 PM using $YET tokens',
                                 },
                                 {
                                     step: 3,
@@ -420,7 +420,7 @@ export default function Home() {
                                 {
                                     icon: '📅',
                                     title: '8+ Daily Tweet Propositions',
-                                    desc: 'Never a dull moment with fresh betting opportunities every single day',
+                                    desc: 'Never a dull moment with fresh yetting opportunities every single day',
                                 },
                                 {
                                     icon: '🏆',
@@ -486,11 +486,11 @@ export default function Home() {
                                 className="flex-1 min-w-0"
                             >
                                 <p className="text-gray-200 mb-6 text-lg">
-                                    The $YET token isn't just a betting chip – it's your membership card to the wildest prediction community on the internet. Holders of <span className="font-bold text-white">4,000,000+ $YET</span> tokens receive a share of platform fees, creating a virtuous cycle of participation and rewards.<br />
+                                    The $YET token isn't just a yetting chip – it's your membership card to the wildest prediction community on the internet. Holders of <span className="font-bold text-white">4,000,000+ $YET</span> tokens receive a share of platform fees, creating a virtuous cycle of participation and rewards.<br />
                                     <span className="font-bold text-white">Token Utility:</span>
                                 </p>
                                 <ul className="space-y-3 text-base">
-                                    <li className="flex items-center gap-2 text-purple-400 font-medium"><FiCheck className="text-blue-400" /> Place bets on propositions</li>
+                                    <li className="flex items-center gap-2 text-purple-400 font-medium"><FiCheck className="text-blue-400" /> Place yets on propositions</li>
                                     <li className="flex items-center gap-2 text-purple-400 font-medium"><FiCheck className="text-blue-400" /> Enter tournaments and special events</li>
                                     <li className="flex items-center gap-2 text-purple-400 font-medium"><FiCheck className="text-blue-400" /> Receive platform fee distributions (for qualifying holders)</li>
                                     <li className="flex items-center gap-2 text-purple-400 font-medium"><FiCheck className="text-blue-400" /> Governance rights for future platform development</li>
@@ -536,7 +536,7 @@ export default function Home() {
                                         items: [
                                             'Launch with The YUGE 3',
                                             'Daily propositions',
-                                            'Basic betting functionality',
+                                            'Basic yetting functionality',
                                             'Wallet integration',
                                         ],
                                     },
