@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root {
+  --color-dark: #0B0F19;
+  --color-dark-lighter: #111827;
+  --color-primary-start: #00BFFF;
+  --color-primary-mid: #8B5CF6;
+  --color-primary-end: #EC4899;
+  --color-text-light: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  --color-border: #334155;
+  --gradient-text: linear-gradient(90deg, var(--color-primary-start), var(--color-primary-mid), var(--color-primary-end));
+  --gradient-bg: linear-gradient(135deg, #0B0F19, #111827);
+  --box-shadow-3d: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
+  --box-shadow-3d-hover: 0 15px 30px rgba(139, 92, 246, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+body, .font-body {
+  font-family: 'DM Sans', var(--font-dm-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Outfit', var(--font-outfit), sans-serif;
+  letter-spacing: -0.01em;
+}
+
+code, pre {
+  font-family: 'DM Sans', var(--font-dm-sans), monospace;
+}
+
+.logo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.footer {
+  background-color: var(--color-dark-lighter);
+}
+
+/* In your global CSS or a module */
+.animated-gradient-text {
+  background: linear-gradient(90deg, #fbcb59, #ff6f61, #6a82fb, #fbcb59);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 3s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
