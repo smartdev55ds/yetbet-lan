@@ -91,7 +91,7 @@ export default function Home() {
                 </span>
                 </div> */}
                 {/* Hero Section */}
-                <section className="flex items-center justify-center px-4 py-10">
+                <section className="flex items-center justify-center px-4 py-10 pt-30">
                     <div className="max-w-5xl mx-auto text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
