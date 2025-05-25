@@ -1,6 +1,5 @@
 'use client'
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import yetImg from '@/assets/yet1.png';
 
@@ -9,10 +8,11 @@ import logoImg from '@/assets/logo2.png';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import { toast } from 'react-hot-toast';
-import bannerImg from '@/banners/banner.jpg';
+import bannerImg from '@/banners/banner2.jpg';
 
 export default function Home() {
     const [email, setEmail] = useState('');
+ 
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
@@ -24,8 +24,9 @@ export default function Home() {
         setEmail('');
     };
 
-    return (
+    return (<div className='relative'>
         <div className="relative min-h-screen overflow-hidden bg-[#181A20]">
+
             {/* Animated background elements */}
             <div className="absolute inset-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#181A20] via-[#23263a] to-[#7c3aed]" />
@@ -53,15 +54,13 @@ export default function Home() {
             {/* Main content */}
             <div className="relative">
                 {/* Banner Image */}
-                {/* <div className="max-w-7xl mx-auto px-4 pt-8">
+                <div className="max-w-7xl mx-auto px-4 pt-8">
                     <img
                         srcSet={bannerImg.src}
                         alt="stake Banner"
-                        width={1600}
-                        height={400}
-                        className="w-full h-auto rounded-3xl shadow-2xl object-cover border border-[#23263a]"
+                        className="w-[100%] md:h-75 h-38 rounded-3xl shadow-2xl object-cover border border-[#23263a]"
                     />
-                </div> */}
+                </div>
                 {/* Info Box: Deposit & Connect Wallet */}
 
                 {/* 
@@ -91,7 +90,7 @@ export default function Home() {
                 </span>
                 </div> */}
                 {/* Hero Section */}
-                <section className="flex items-center justify-center px-4 py-10 pt-30">
+                <section className="flex items-center justify-center px-4 py-10 pt-20">
                     <div className="max-w-5xl mx-auto text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -764,5 +763,5 @@ export default function Home() {
                 </motion.section>
             </div>
         </div>
-    );
+    </div>);
 }

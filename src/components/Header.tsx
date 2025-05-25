@@ -67,7 +67,7 @@ export default function Header() {
               style={{ boxShadow: '0 4px 24px 0 rgba(99,232,128,0.15)' }}
             >
               Buy $YET
-              <img srcSet={yetImg.src} alt="YET" className="w-7 h-7 ml-1" />
+              {/* <img srcSet={yetImg.src} alt="YET" className="w-7 h-7 ml-1" /> */}
             </a>
           </div>
         </div>
