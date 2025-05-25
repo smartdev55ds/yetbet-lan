@@ -58,7 +58,7 @@ export default function Home() {
                     <img
                         srcSet={bannerImg.src}
                         alt="stake Banner"
-                        className="w-[100%] md:h-75 h-38 rounded-3xl shadow-2xl object-cover border border-[#23263a]"
+                        className="w-[100%]  h-auto rounded-3xl shadow-2xl object-cover border border-[#23263a]"
                     />
                 </div>
                 {/* Info Box: Deposit & Connect Wallet */}
