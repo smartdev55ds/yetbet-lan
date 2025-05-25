@@ -60,7 +60,7 @@ export default function Home() {
                         {/* Coin SVG Component */}
                         {(() => {
                             const CoinSVG = () => (
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
                                     <circle cx="20" cy="20" r="18" fill="#FFD700" stroke="#F6C700" strokeWidth="4" />
                                     {/* <circle cx="20" cy="20" r="10" fill="#FFF8DC" /> */}
                                     <text x="20" y="20" textAnchor="middle" dominantBaseline="middle" fill="#FFFF" stroke='#FFFF' strokeWidth="1" fontSize="10">$YET</text>
