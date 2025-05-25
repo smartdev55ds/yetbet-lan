@@ -53,7 +53,7 @@ export default function Home() {
             {/* Main content */}
             <div className="relative">
                 {/* Banner Image */}
-                <div className="max-w-7xl mx-auto px-4 pt-8">
+                {/* <div className="max-w-7xl mx-auto px-4 pt-8">
                     <img
                         srcSet={bannerImg.src}
                         alt="stake Banner"
@@ -61,10 +61,10 @@ export default function Home() {
                         height={400}
                         className="w-full h-auto rounded-3xl shadow-2xl object-cover border border-[#23263a]"
                     />
-                </div>
+                </div> */}
                 {/* Info Box: Deposit & Connect Wallet */}
 
-
+                {/* 
                 <div className="max-w-3xl mx-auto px-4 mt-5 mb-4">
                     <div className="bg-[#10131c] border border-[#63e880] shadow-xl rounded-2xl p-4 flex flex-col items-center text-center">
                         <h2
@@ -83,13 +83,13 @@ export default function Home() {
                             You will know you are logged on when your yet balance appears. This balance is your YETbet Platform balance not your phantom or solflare wallet balance.
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* <div className="alert alert-info mt-4 max-w-xl mx-auto">
-          <span>
-            <strong>Note:</strong> Connecting your wallet logs you into YETbet. Token balances shown here are stored on the platform, not in your wallet.
-          </span>
-        </div> */}
+                <span>
+                    <strong>Note:</strong> Connecting your wallet logs you into YETbet. Token balances shown here are stored on the platform, not in your wallet.
+                </span>
+                </div> */}
                 {/* Hero Section */}
                 <section className="flex items-center justify-center px-4 py-10">
                     <div className="max-w-5xl mx-auto text-center">
@@ -109,7 +109,7 @@ export default function Home() {
                                 </span>
                             </h1>
                             <p className="text-2xl md:text-3xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
-                                The One-of-Kind Tweet Based Pari-Mutual Predictions Market
+                                The One-of-kind Parimutuel Predictions Market for Celebrity Tweets.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-14">
                                 <Link
@@ -725,7 +725,7 @@ export default function Home() {
                             transition={{ duration: 0.8 }}
                             className="space-y-8"
                         >
-                            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Ready to Start Predicting?</h2>
+                            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Ready to Start YETTING?</h2>
                             <p className="text-xl text-gray-300">Join the most exciting prediction market on Solana</p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
                                 <Link

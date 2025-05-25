@@ -98,7 +98,7 @@ const RulesPage: React.FC = () => {
           <p className="text-base text-gray-400 mb-8">
             By using the YETbet platform, you acknowledge that you have read, understood, and agree to abide by these rules and guidelines.
           </p>
-          <Link href="/propositions" className="bg-gradient-to-r from-primary to-blue-500 text-white font-bold rounded-full px-8 py-4 shadow-lg hover:scale-105 transition text-lg flex items-center justify-center">
+          <Link href="/" className="bg-gradient-to-r from-primary to-blue-500 text-white font-bold rounded-full px-8 py-4 shadow-lg hover:scale-105 transition text-lg flex items-center justify-center">
             View Propositions
           </Link>
         </div>
