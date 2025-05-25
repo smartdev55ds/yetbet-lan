@@ -8,7 +8,7 @@ import logoImg from '@/assets/logo2.png';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import { toast } from 'react-hot-toast';
-import bannerImg from '@/banners/banner2.jpg';
+import bannerImg from '@/banners/banner.png';
 
 export default function Home() {
     const [email, setEmail] = useState('');
@@ -54,11 +54,11 @@ export default function Home() {
             {/* Main content */}
             <div className="relative">
                 {/* Banner Image */}
-                <div className="max-w-7xl mx-auto px-4 pt-8">
+                <div className="max-w-3xl mx-auto px-4 pt-8">
                     <img
                         srcSet={bannerImg.src}
                         alt="stake Banner"
-                        className="w-[100%]  h-auto rounded-3xl shadow-2xl object-cover border border-[#23263a]"
+                        className="w-[100%]  h-auto object-cover"
                     />
                 </div>
                 {/* Info Box: Deposit & Connect Wallet */}
