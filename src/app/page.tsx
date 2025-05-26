@@ -8,7 +8,7 @@ import logoImg from '@/assets/logo2.png';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import { toast } from 'react-hot-toast';
-import bannerImg from '@/banners/banner2.jpg';
+import bannerImg from '@/banners/banner3.jpg';
 
 export default function Home() {
     const [email, setEmail] = useState('');
