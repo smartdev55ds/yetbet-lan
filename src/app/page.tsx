@@ -8,7 +8,7 @@ import logoImg from '@/assets/logo2.png';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import { toast } from 'react-hot-toast';
-import bannerImg from '@/banners/banner.png';
+import bannerImg from '@/banners/banner2.jpg';
 
 export default function Home() {
     const [email, setEmail] = useState('');
@@ -55,119 +55,11 @@ export default function Home() {
             <div className="relative">
                 {/* Banner Image */}
                 <div className="max-w-3xl mx-auto px-4 pt-8 relative" style={{ minHeight: 220 }}>
-                    {/* Floating Coins */}
-                    <div className="pointer-events-none absolute inset-0 w-full h-full">
-                        {/* Coin SVG Component */}
-                        {(() => {
-                            const CoinSVG = () => (
-                                <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
-                                    <circle cx="20" cy="20" r="18" fill="#FFD700" stroke="#F6C700" strokeWidth="4" />
-                                    {/* <circle cx="20" cy="20" r="10" fill="#FFF8DC" /> */}
-                                    <text x="20" y="20" textAnchor="middle" dominantBaseline="middle" fill="#FFFF" stroke='#FFFF' strokeWidth="1" fontSize="10">$YET</text>
-                                </svg>
-                            );
-                            return (
-                                <>
-                                    {/* Coin 1 */}
-                                    <motion.div
-                                        className="absolute left-[-30px] top-[30px] z-10"
-                                        initial={{ y: 0, rotate: 0, opacity: 0 }}
-                                        animate={{ y: [0, -30, 0], rotate: [0, 360], opacity: [0, 1, 1, 0] }}
-                                        transition={{
-                                            duration: 6,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            delay: 0,
-                                            ease: "easeInOut"
-                                        }}
-                                    >
-                                        <CoinSVG />
-                                    </motion.div>
-                                    {/* Coin 2 */}
-                                    <motion.div
-                                        className="absolute right-[-20px] top-[60px] z-10"
-                                        initial={{ y: 0, rotate: 0, opacity: 0 }}
-                                        animate={{ y: [0, 40, 0], rotate: [0, -360], opacity: [0, 1, 1, 0] }}
-                                        transition={{
-                                            duration: 7,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            delay: 1.5,
-                                            ease: "easeInOut"
-                                        }}
-                                    >
-                                        <CoinSVG />
-                                    </motion.div>
-                                    {/* Coin 3 */}
-                                    <motion.div
-                                        className="absolute left-[50%] top-[-30px] z-10"
-                                        style={{ transform: "translateX(-50%)" }}
-                                        initial={{ y: 0, rotate: 0, opacity: 0 }}
-                                        animate={{ y: [0, 50, 0], rotate: [0, 360], opacity: [0, 1, 1, 0] }}
-                                        transition={{
-                                            duration: 8,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            delay: 2.5,
-                                            ease: "easeInOut"
-                                        }}
-                                    >
-                                        <CoinSVG />
-                                    </motion.div>
-                                    {/* Coin 4 */}
-                                    <motion.div
-                                        className="absolute left-[20%] bottom-[-20px] z-10"
-                                        initial={{ y: 0, rotate: 0, opacity: 0 }}
-                                        animate={{ y: [0, -40, 0], rotate: [0, -360], opacity: [0, 1, 1, 0] }}
-                                        transition={{
-                                            duration: 7.5,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            delay: 0.8,
-                                            ease: "easeInOut"
-                                        }}
-                                    >
-                                        <CoinSVG />
-                                    </motion.div>
-                                    {/* Coin 5 */}
-                                    <motion.div
-                                        className="absolute right-[15%] bottom-[-30px] z-10"
-                                        initial={{ y: 0, rotate: 0, opacity: 0 }}
-                                        animate={{ y: [0, -50, 0], rotate: [0, 360], opacity: [0, 1, 1, 0] }}
-                                        transition={{
-                                            duration: 6.5,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            delay: 2,
-                                            ease: "easeInOut"
-                                        }}
-                                    >
-                                        <CoinSVG />
-                                    </motion.div>
-                                </>
-                            );
-                        })()}
-                    </div>
-                    <motion.img
-                        src={bannerImg.src}
+             
+                    <img
+                        srcSet={bannerImg.src}
                         alt="stake Banner"
                         className="w-[100%] h-auto object-cover"
-                        initial={{ opacity: 0, scale: 0.95, y: 30 }}
-                        animate={{
-                            opacity: 1,
-                            scale: 1,
-                            y: [0, -10, 0], // floating effect
-                        }}
-                        transition={{
-                            opacity: { duration: 1.2 },
-                            scale: { type: "spring", stiffness: 120, damping: 10, duration: 1.2 },
-                            y: {
-                                duration: 3,
-                                repeat: Infinity,
-                                repeatType: "loop",
-                                ease: "easeInOut",
-                            },
-                        }}
                     />
                 </div>
                 {/* Info Box: Deposit & Connect Wallet */}
