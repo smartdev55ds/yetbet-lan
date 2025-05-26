@@ -54,12 +54,12 @@ export default function Home() {
             {/* Main content */}
             <div className="relative">
                 {/* Banner Image */}
-                <div className="max-w-3xl mx-auto px-4 pt-8 relative" style={{ minHeight: 220 }}>
+                <div className="max-w-5xl  mx-auto px-4 pt-8 relative" style={{ minHeight: 220 }}>
              
                     <img
                         srcSet={bannerImg.src}
                         alt="stake Banner"
-                        className="w-[100%] h-auto object-cover"
+                        className="w-[100%] max-h-[620px] h-auto object-cover"
                     />
                 </div>
                 {/* Info Box: Deposit & Connect Wallet */}
