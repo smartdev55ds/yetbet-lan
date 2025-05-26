@@ -113,7 +113,7 @@ export default function Home() {
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-14">
                                 <Link
-                                    href="https://yetbet.app"
+                                    href="https://yetbet.io"
                                     target="_blank"
                                     className="bg-gradient-to-r from-primary to-blue-500 text-white font-bold rounded-full px-8 py-4 shadow-lg hover:scale-105 hover:from-blue-600 hover:to-primary transition-all duration-200 flex items-center justify-center"
                                 >
@@ -121,7 +121,7 @@ export default function Home() {
                                     <FiArrowRight className="ml-2 text-white" />
                                 </Link>
                                 <Link
-                                    href="https://yetbet.app/rules"
+                                    href="https://yetbet.io/rules"
                                     target="_blank"
                                     className="border-2 border-primary text-white font-bold rounded-full px-8 py-4 bg-transparent hover:bg-primary/10 transition-all duration-200 flex items-center justify-center"
                                 >
@@ -729,7 +729,7 @@ export default function Home() {
                             <p className="text-xl text-gray-300">Join the most exciting prediction market on Solana</p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
                                 <Link
-                                    href="https://yetbet.app"
+                                    href="https://yetbet.io"
                                     target="_blank"
                                     className="bg-gradient-to-r from-primary to-blue-500 text-white font-bold rounded-full px-8 py-4 shadow-lg hover:scale-105 hover:from-blue-600 hover:to-primary transition-all duration-200 flex items-center justify-center"
                                 >
@@ -737,7 +737,7 @@ export default function Home() {
                                     <FiArrowRight className="ml-2 text-white" />
                                 </Link>
                                 <Link
-                                    href="https://yetbet.app/rules"
+                                    href="https://yetbet.io/rules"
                                     target="_blank"
                                     className="border-2 border-primary text-white font-bold rounded-full px-8 py-4 bg-transparent hover:bg-primary/10 transition-all duration-200 flex items-center justify-center"
                                 >
